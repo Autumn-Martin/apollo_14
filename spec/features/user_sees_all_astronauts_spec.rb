@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'user sees all astronauts and their attributes' do
   describe 'they visit /astronauts' do
-  it 'it displays all astronauts and their attributes' do
+  it 'displays all astronauts and their attributes' do
     astronaut_1 = Astronaut.create!(name: "Neil Armstrong" , age: 37, job: "Commander")
     astronaut_2 = Astronaut.create!(name: "Mae Jemison" , age: 32, job: "Commander")
 
