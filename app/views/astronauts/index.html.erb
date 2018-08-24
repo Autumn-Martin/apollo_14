@@ -1,0 +1,4 @@
+<h1>Astronauts</h1>
+<% @astronauts.each do |astronaut| %>
+  <%=link_to astronaut.name, astronaut_path(astronaut), class: 'astronaut-name' %>
+<% end %>
