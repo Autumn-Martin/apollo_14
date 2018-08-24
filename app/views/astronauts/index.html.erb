@@ -1,4 +1,14 @@
 <h1>Astronauts</h1>
+<ul id='astronauts'>
 <% @astronauts.each do |astronaut| %>
-  <%=link_to astronaut.name, astronaut_path(astronaut), class: 'astronaut-name' %>
+  <li>
+  <%= astronaut.name%>
+  </li>
+  <li>
+  <%= astronaut.age %>
+  </li>
+  <li>
+  <%= astronaut.job %>
+  </li>
 <% end %>
+</ul>
